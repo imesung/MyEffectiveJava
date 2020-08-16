@@ -256,6 +256,6 @@ public static void main(String[] args) throws CloneNotSupportedException {
 >
 > - Ex. public static Yum newInstance(Yum yum) {...}
 
-복사 생성자와 복사 팩토리를 사용하면 Cloneable 방식처럼 불필요한 check exception 처리가 필요 없고, 형변환도 필요 없다. 또한, 직접적인 인스턴스가 아닌 인터페이스 타입의 인스턴스를 매개 변수로 받을 수 있어 유연성 또한 향상될 수 있는 장점이 있다.
+복사 생성자와 복사 팩토리를 사용하면 Cloneable 방식처럼 불필요한 check exception 처리가 필요 없고, 형변환도 필요 없다. 또한, 직접적인 인스턴스가 아닌 인터페이스 타입의 인스턴스를 매개 변수로 받을 수 있어 유연성 또한 향상 될 수 있는 장점이 있다.
 
 **결과적으로 객체의 복제 기능은 Cloneable보다 복사 생성자와 복사 팩토리를 이용하는 것이 가장 좋다라는 것이다. 하지만 배열 같은 경우는 clone() 메소드를 제대로 사용한 것이니 배열의 경우는 예외이다.**
